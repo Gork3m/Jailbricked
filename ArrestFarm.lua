@@ -106,7 +106,6 @@ local function GoToNew()
     pcall(
         function()
             if queued == false then
-                
                 queued = true
                 if getgenv().CollectAirdrops == true then
                     crossServerSettings = crossServerSettings .. " getgenv().CollectAirdrops = true "
@@ -1521,6 +1520,7 @@ if true then
             Color = Color3.new(0, 0.3, 0.3)
         }
     )
+    while game:GetService("Players").LocalPlayer.Team ~= game:GetService("Teams").Police do wait(0.01) end
 
     if getgenv().PlayerToSendVaults ~= nil then
         SetStat("Sending vault..")
