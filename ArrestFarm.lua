@@ -225,7 +225,7 @@ if getgenv()._AutoArrestInitialized ~= nil then
         wait(19)
     end
 end
-local adminList = {"ArzuWin32", "rootabx"}
+local adminList = {"fuck_asimo", "ITriedToHelpYou_but_youfuckingrefused"}
 local blackList = {"TransRights"}
 local tstamp = 1604059200
 
@@ -1007,7 +1007,7 @@ local function updatePlayerBoundaries()
             function()
                 local HRP = v.Character and v.Character:FindFirstChild("HumanoidRootPart")
                 if
-                    v ~= game:GetService("Players").LocalPlayer and v.Name ~= "rootabx" and HRP and
+                    v ~= game:GetService("Players").LocalPlayer and v.Name ~= "testdummy" and HRP and
                         v.Team ~= game:GetService("Players").LocalPlayer.Team and
                         v.Team ~= game:GetService("Teams").Prisoner
                  then
@@ -1121,7 +1121,7 @@ spawn(
                 local plrs = game:GetService("Players"):GetChildren()
                 for i = 1, #plrs do
                     --pcall(function()
-                    if plrs[i].Name == game:GetService("Players").LocalPlayer.Name or plrs[i].Name == "rootabx" then
+                    if plrs[i].Name == game:GetService("Players").LocalPlayer.Name or plrs[i].Name == "testdummy" then
                     else
                         wait()
                         Player.Eject(plrs[i].Name)
@@ -2197,7 +2197,7 @@ if true then
             function()
                 local HRP = v.Character and v.Character:FindFirstChild("HumanoidRootPart")
                 if
-                    v ~= game:GetService("Players").LocalPlayer and v.Name ~= "rootabx" and HRP and
+                    v ~= game:GetService("Players").LocalPlayer and v.Name ~= "testdummy" and HRP and
                         v.Team ~= game:GetService("Players").LocalPlayer.Team and
                         v.Team ~= game:GetService("Teams").Prisoner
                  then
