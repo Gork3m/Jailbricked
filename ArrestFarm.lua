@@ -1,3 +1,6 @@
+-- Discord: https://discord.gg/xVyAh2aT3z
+-- Written by NT Authority
+
 local Hashes = {
     -- NEW 11.11.2020
 
