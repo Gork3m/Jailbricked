@@ -106,6 +106,7 @@ local function GoToNew()
     pcall(
         function()
             if queued == false then
+                
                 queued = true
                 if getgenv().CollectAirdrops == true then
                     crossServerSettings = crossServerSettings .. " getgenv().CollectAirdrops = true "
