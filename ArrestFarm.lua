@@ -153,11 +153,16 @@ local function GoToNew()
                         )
                     end
                 )
+                skipfirstniggers = 0
                 for I, V in pairs(GameInstances.data) do
                     pcall(
                         function()
+                            if skipfirstniggers > 10 then
                             game:GetService("TeleportService"):TeleportToPlaceInstance(606849621, V.id)
                             wait(0.2)
+                                end
+                            
+                            skipfirstniggers = skipfirstniggers + 1
                         end
                     )
                 end
