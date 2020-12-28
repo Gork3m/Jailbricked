@@ -15,7 +15,7 @@ _2 = {
 
 _1 = {
     -- 28.12.2020
-    EquipItem = "d115d87f",
+    EquipItem = "bb70a15b",
     Eject = "b69f310b",
     SendVault = "aeae159a",
     TeamChange = "d91dba92",
