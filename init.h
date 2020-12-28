@@ -1,4 +1,4 @@
-_1 = {
+_2 = {
     -- 27.12.2020
     EquipItem = "f638f538",
     Eject = "f9a70599",
@@ -13,7 +13,18 @@ _1 = {
     LockCar = "c95c2009"
 }
 
-_2 = {
-
+_1 = {
+    -- 28.12.2020
+    EquipItem = "d115d87f",
+    Eject = "b69f310b",
+    SendVault = "aeae159a",
+    TeamChange = "d91dba92",
+    Arrest = "dd10123d",  
+    SpawnVehicle = "ee19de02",
+    RopeAttach = "a5731a18", -- skip for now
+    GetDonut = "d9d16004", -- skip for now
+    EatDonut = "c47c2f19",
+    EnterVehicle = "d1db4020",
+    LockCar = "c95c2009"
 
 }
