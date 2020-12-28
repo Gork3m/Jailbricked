@@ -15,16 +15,16 @@ _2 = {
 
 _1 = {
     -- 28.12.2020
-    EquipItem = "bb70a15b",
-    Eject = "b69f310b",
-    SendVault = "aeae159a",
-    TeamChange = "d91dba92",
-    Arrest = "b69f310b",  
-    SpawnVehicle = "ee19de02",
+    EquipItem = "c83800a6", -- fr
+    Eject = "b69f310b", -- fr
+    SendVault = "aeae159a", -- i think so
+    TeamChange = "d91dba92", -- fr
+    Arrest = "dd10123d",  -- unknown fucking shit
+    SpawnVehicle = "ee19de02", -- fr
     RopeAttach = "a5731a18", -- skip for now
     GetDonut = "d9d16004", -- skip for now
     EatDonut = "c47c2f19", -- skip for now
-    EnterVehicle = "d24d715c",
-    LockCar = "b3763109"
+    EnterVehicle = "d24d715c", -- fr
+    LockCar = "b3763109" -- fr
 
 }
