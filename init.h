@@ -25,6 +25,6 @@ _1 = {
     GetDonut = "d9d16004", -- skip for now
     EatDonut = "c47c2f19", -- skip for now
     EnterVehicle = "d24d715c", -- fr
-    LockCar = "b3763109" -- fr
-
+    LockCar = "b3763109", -- fr
+    Pop = "f4b11a0b" -- thanks to faee
 }
