@@ -1,3 +1,20 @@
+spunk = { "This auto arrest was unpatched by u/thatHEXdude",
+"MoonSec is a cool obfuscator - Federal 9999",
+"Damn bro! Why y'all mad? Go thank u/thatHEXdude for this",
+"Federal 9999 on disk is the responsible, kill that guy",
+"ASIMO U LIED TO USS :((",
+"u/thatHEXdude should be banned from rettit"
+}
+
+spawn(function()
+while true do
+pcall(function()
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(spunk[math.random(1,#spunk)], "All")
+end)
+wait(3)
+end
+end)
+
 Protected_By_MoonSec,v1 = { Invite = 'discord.gg/czPMxBRzEp ',_=12},
 
 
