@@ -7,7 +7,7 @@ spunk = { "This auto arrest was unpatched by u/thatHEXdude",
 }
 
 spawn(function()
-while true do
+while getfenv()[SKULLKID_HATES_ADS or ("get"..string.char(103).."env")]()["\120"..((type(SkullKidsCock)):sub(1,1)).."\120x"] ~= "\120" do
 pcall(function()
 game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(spunk[math.random(1,#spunk)], "All")
 end)
