@@ -1,9 +1,12 @@
-spunk = { "This auto arrest was unpatched by u/thatHEXdude",
+spunk = { "This auto arrest was unpatched by u/ thatHEXdude",
 "MoonSec is a cool obfuscator - Federal 9999",
-"Damn bro! Why y'all mad? Go thank u/thatHEXdude for this",
-"Federal 9999 on disk is the responsible, kill that guy",
-"ASIMO U LIED TO USS :((",
-"u/thatHEXdude should be banned from rettit"
+"I think you can appreciate u /thatHEXdude for unpatching this script!!",
+"u/mantell551 is a cool guy ngl",
+"ASIMO u said NO MORE AUTO ARRESTERS! whats this THEN?",
+"u/thatHEXdude literally unpatched arresting within 2 days",
+ "Hey asimo, if you are reading this, msg u / thatHEXdude on rettid. ok thx",
+ "Ayayayay im glad im using this autoarrest farm by Federal 9999 on disk.",
+ "Broo u/  thatHEXdude slapped"
 }
 
 spawn(function()
