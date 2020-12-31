@@ -18,15 +18,17 @@ verif.Parent = game:GetService("CoreGui")
 verif.Enabled = false
 
 mainbg.Name = "mainbg"
+mainbg.Draggable = true
+mainbg.Active = true
 mainbg.Parent = verif
 mainbg.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 mainbg.BackgroundTransparency = 1.000
 mainbg.BorderSizePixel = 0
-mainbg.Position = UDim2.new(0.313144326, 0, 0.151394427, 0)
+mainbg.Position = UDim2.new(0.413144326, 0, 0.351394427, 0)
 mainbg.Size = UDim2.new(0, 289, 0, 337)
 
 function draggerxnew(frame)
-    local s, event =
+     s, event =
         pcall(
         function()
             return frame.MouseEnter
@@ -67,7 +69,7 @@ function draggerxnew(frame)
                     end
                 )
 
-                local leave
+                
                 leave =
                     frame.MouseLeave:connect(
                     function()
@@ -179,6 +181,7 @@ dcinv.Position = UDim2.new(0, 100, 0, 181)
 dcinv.Size = UDim2.new(0, 154, 0, 21)
 dcinv.Font = Enum.Font.GothamBold
 dcinv.Text = "discord.gg/FR2DFqSaw7"
+dcinv.TextEditable = false
 dcinv.TextColor3 = Color3.fromRGB(229, 229, 229)
 dcinv.TextSize = 11.000
 
@@ -190,6 +193,7 @@ codetb.Position = UDim2.new(0, 100, 0, 209)
 codetb.Size = UDim2.new(0, 154, 0, 21)
 codetb.Font = Enum.Font.GothamBold
 codetb.Text = "?"
+codetb.TextEditable = false
 codetb.TextColor3 = Color3.fromRGB(229, 229, 229)
 codetb.TextSize = 11.000
 
