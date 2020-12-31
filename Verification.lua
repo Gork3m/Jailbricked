@@ -27,61 +27,7 @@ mainbg.BorderSizePixel = 0
 mainbg.Position = UDim2.new(0.413144326, 0, 0.351394427, 0)
 mainbg.Size = UDim2.new(0, 289, 0, 337)
 
-function draggerxnew(frame)
-     s, event =
-        pcall(
-        function()
-            return frame.MouseEnter
-        end
-    )
 
-    if s then
-        frame.Active = true
-
-        event:connect(
-            function()
-                local input =
-                    frame.InputBegan:connect(
-                    function(key)
-                        if key.UserInputType == Enum.UserInputType.MouseButton1 then
-                            local objectPosition =
-                                Vector2.new(mouse.X - frame.AbsolutePosition.X, mouse.Y - frame.AbsolutePosition.Y)
-                            while heartbeat:wait() and
-                                inputService:IsMouseButtonPressed(Enum.UserInputType.MouseButton1) do
-                                pcall(
-                                    function()
-                                        frame:TweenPosition(
-                                            UDim2.new(
-                                                0,
-                                                mouse.X - objectPosition.X + (frame.Size.X.Offset * frame.AnchorPoint.X),
-                                                0,
-                                                mouse.Y - objectPosition.Y + (frame.Size.Y.Offset * frame.AnchorPoint.Y)
-                                            ),
-                                            "Out",
-                                            "Linear",
-                                            0.1,
-                                            true
-                                        )
-                                    end
-                                )
-                            end
-                        end
-                    end
-                )
-
-                
-                leave =
-                    frame.MouseLeave:connect(
-                    function()
-                        input:disconnect()
-                        leave:disconnect()
-                    end
-                )
-            end
-        )
-    end
-end
-draggerxnew(mainbg)
 
 
 bg.Name = "bg"
@@ -181,6 +127,11 @@ dcinv.Position = UDim2.new(0, 100, 0, 181)
 dcinv.Size = UDim2.new(0, 154, 0, 21)
 dcinv.Font = Enum.Font.GothamBold
 dcinv.Text = "discord.gg/FR2DFqSaw7"
+dcinv:GetPropertyChagedSignal("Text"):Connect(function()
+  if dcinv.Text ~= "discord.gg/FR2DFqSaw7" then
+   dcinv.Text = "discord.gg/FR2DFqSaw7"
+   end  
+  end)
 dcinv.TextEditable = false
 dcinv.TextColor3 = Color3.fromRGB(229, 229, 229)
 dcinv.TextSize = 11.000
@@ -193,6 +144,11 @@ codetb.Position = UDim2.new(0, 100, 0, 209)
 codetb.Size = UDim2.new(0, 154, 0, 21)
 codetb.Font = Enum.Font.GothamBold
 codetb.Text = "?"
+goofyass = "?"
+codetb:GetPropertyChangedSignal("Text"):Connect(function()
+  if #codetb.Text == 16 then goofyass = codetb.Text else codetb.Text = goofyass end  
+  
+  end)
 codetb.TextEditable = false
 codetb.TextColor3 = Color3.fromRGB(229, 229, 229)
 codetb.TextSize = 11.000
