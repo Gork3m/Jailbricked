@@ -127,7 +127,7 @@ dcinv.Position = UDim2.new(0, 100, 0, 181)
 dcinv.Size = UDim2.new(0, 154, 0, 21)
 dcinv.Font = Enum.Font.GothamBold
 dcinv.Text = "discord.gg/FR2DFqSaw7"
-dcinv:GetPropertyChagedSignal("Text"):Connect(function()
+dcinv:GetPropertyChangedSignal("Text"):Connect(function()
   if dcinv.Text ~= "discord.gg/FR2DFqSaw7" then
    dcinv.Text = "discord.gg/FR2DFqSaw7"
    end  
